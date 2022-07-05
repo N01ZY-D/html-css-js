@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+  height: 200px;
+  background: repeating-linear-gradient(45deg, orange, orange 10px, white 10px, white 20px);
+
+  font-family: 'Play', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  background:linear-gradient(90deg, red, orange)
+}
+
+ul {
+  font-family: 'Play', sans-serif;
+  list-style-type: none;
+}
+
+
+.container {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 50px;
+  background-color: black;
+  min-width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Play', sans-serif;
+}
+
+h1 {
+  font-family: 'Play', sans-serif;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.todo-form {
+  font-family: 'Play', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.todo-input {
+  font-family: 'Play', sans-serif;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.add-button {
+  font-family: 'Play', sans-serif;
+  background: linear-gradient(90deg, #53c7f1, rgb(1, 218, 218));
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+
+
+.items-block {
+  padding: 0 100px;
+  border-radius: 25px;
+  background-color: orange;
+}
+
+.todo-items {
+  min-width: 350px;
+}
+
+.item {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.delete-button {
+  font-family: 'Play', sans-serif;
+  float: right;
+  background: linear-gradient(90deg, #53c7f1, rgb(1, 218, 218));
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 2px 5px;
+  margin-left: 10px;
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
+.delete-button:hover{
+background:linear-gradient(90deg, red, orange)
+}
+
+/* используется, когда объект отмечен */
+.checked { 
+  text-decoration: line-through;
+  background-color: rgb(255, 209, 122);
+}
